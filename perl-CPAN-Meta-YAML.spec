@@ -1,9 +1,9 @@
 %define upstream_name    CPAN-Meta-YAML
-%define upstream_version 0.005
+%define upstream_version 0.008
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Read and write a subset of YAML for CPAN Meta files
 License:	GPL+ or Artistic
@@ -46,6 +46,9 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/*
 
 %changelog
+* Sat Dec 29 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.8.0-1
+- new version
+
 * Tue Jan 10 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.5.0-1
 + Revision: 759439
 - version update 0.005
