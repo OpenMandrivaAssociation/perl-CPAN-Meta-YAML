@@ -1,15 +1,15 @@
-%define upstream_name    CPAN-Meta-YAML
-%define upstream_version 0.008
+%define	modname	CPAN-Meta-YAML
+%define	modver	0.008
 
-Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Name:		perl-%{modname}
+Version:	%{perl_convert_version %{modver}}
 Release:	1
 
 Summary:	Read and write a subset of YAML for CPAN Meta files
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{modname}
+Source0:	http://www.cpan.org/modules/by-module/CPAN/%{modname}-%{modver}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -28,7 +28,7 @@ It should not be used for any other general YAML parsing or generation
 task.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{modname}-%{modver}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -47,6 +47,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %changelog
 * Sat Dec 29 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.8.0-1
+- cleanups
 - new version
 
 * Tue Jan 10 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.5.0-1
