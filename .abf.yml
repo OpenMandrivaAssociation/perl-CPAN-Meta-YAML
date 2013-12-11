@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   CPAN-Meta-YAML-0.008.tar.gz: c837799a473ac09d89f5292d575b5a96afac10b9
+sources:
+  CPAN-Meta-YAML-0.010.tar.gz: e594e3cd2b371bac16d4186cde4187ef4b6d12b2
