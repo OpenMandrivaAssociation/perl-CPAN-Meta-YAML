@@ -18,6 +18,7 @@ BuildRequires:	perl(File::Spec::Functions)
 BuildRequires:	perl(Scalar::Util)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(vars)
+BuildRequires:	perl(JSON::PP) >= 2.27
 
 %description
 This module implements a subset of the YAML specification for use in
