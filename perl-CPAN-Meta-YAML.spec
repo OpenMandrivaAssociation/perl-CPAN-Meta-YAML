@@ -3,7 +3,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	2
+Release:	3
 
 Summary:	Read and write a subset of YAML for CPAN Meta files
 License:	GPL+ or Artistic
