@@ -1,14 +1,15 @@
 %define	modname	CPAN-Meta-YAML
-%define modver 0.010
+%define modver 0.012
 
 Summary:	Read and write a subset of YAML for CPAN Meta files
+
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/CPAN-Meta-YAML-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/CPAN/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -43,5 +44,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README Changes LICENSE META.yml META.json
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
+
 
 
